@@ -3,7 +3,7 @@
 \newif\ifafourpaper
 \afourpapertrue
 \ifafourpaper
-\documentclass[a4paper,12pt,punct=kaiming]{ctexart}
+\documentclass[a4paper,12pt,punct=kaiming,fontset=none]{ctexart}
 \usepackage[hmargin=1.5in,vmargin=1in]{geometry}
 \title{\bfseries\titleContent \\[1em] \large\normalfont——兼论中国走向公民社会之路}
 \else
@@ -26,10 +26,11 @@
   linkcolor={.}
 ]{hyperref}
 
-\setmainfont{Times New Roman}
+\setmainfont{Times New Roman}[Ligatures=Rare]
 
 \newfontfamily\enkai{KaiTi_GB2312}
 \setCJKfamilyfont{entimes}{Times New Roman}
+\newcommand*{\entimes}{\CJKfamily{entimes}}
 
 \setCJKmainfont{Songti SC}[
   BoldFont = PingFang SC,
@@ -537,7 +538,7 @@
 \bibitem[Oborensky(1971)]{Oborensky} Oborensky, D. 1971. \textit{The Byzantine Commonwealth, Eastern Europe, 500–1453}. London.
 \bibitem[Popkin(1979)]{Popkin} Popkin, S. 1979. \textit{The Rational Peasant, the Political Economy of Rural Society in Vietnam}. Berkeley.
 \bibitem[Redfield(1955)]{Redfield55} Redfield, R. 1955. \textit{The Little Community}. University of Chicago.
-\bibitem[Redfield(1956)]{Redfield56} \CJKfamily{entimes}———. 1956. \textit{Peasant Society and Culture}. University of Chicago.
+\bibitem[Redfield(1956)]{Redfield56} \entimes———. 1956. \textit{Peasant Society and Culture}. University of Chicago.
 \bibitem[Scott(1976)]{Scott} Scott, J. C. 1976. \textit{The Moral Economy of the Peasant: Rebellion and Subsistence in Southeast Asia}. New Haven.
 \bibitem[Treadgold(1997)]{Treadgold} Treadgold, W. 1997. \textit{A History of the Byzantine, State and Society}. Stanford University.
 \end{thebibliography}
